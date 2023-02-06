@@ -46,7 +46,12 @@ function Work(){
                     }
                     let numberOut = finalNumber[finalNumber.length - 1];
                     let checkNumber = (10 - Number(numberOut)) 
-                    checkValueEl.innerText = checkNumber      
+                    if(checkNumber === 10){
+                        checkValueEl.innerText = 0
+                    }else{
+                        checkValueEl.innerText = checkNumber   
+                    }
+                       
             }
             evenNumber()   
     }
